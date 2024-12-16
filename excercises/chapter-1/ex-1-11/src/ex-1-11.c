@@ -25,10 +25,10 @@
 int main(void)
 {
 	/*
-	 * c: it's store the user input.
-	 * state: Indicates the word is continue.
-	 * nw: store the word count.
-	 * state_change: check the word is any special character or
+	 * c: It stores the user input.
+	 * state: Indicate whether the word is continue or not.
+	 * nw: Store the word count.
+	 * state_change: Check if the word is any special character or
 	 *               digit.
 	 */
 
@@ -38,11 +38,12 @@ int main(void)
 	state_change = 0;
 	state = OUT;
 
-	printf("Enter your input from which you want to find the number of words:\n");
+	printf("Enter your input from which you want to find the number of"
+	       "words:\n");
 
 	/*
-	 * Here entered characters are compared with alphabets. If it is matches, then
-	 * nw is incremented by 1; otherwise, it is not.
+	 * Here entered characters are compared with alphabets. If it is
+	 * matches, then nw is incremented by 1; otherwise, it is not.
 	 */
 
 	while ((c = getchar()) != EOF) {
