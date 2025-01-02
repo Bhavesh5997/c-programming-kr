@@ -1,0 +1,23 @@
+1)
+Enter your digit: 12345
+String s: 12345
+
+2)
+Enter your digit: -12345
+String s: -12345
+
+3)
+Enter your digit: -4444447
+String s: -4444447
+
+4)
+Enter your digit: 1246789098
+String s: 1246789098
+
+5)
+Enter your number: -2147483648
+String s: -2147483648
+
+6)
+Enter your number: 2147483647
+String s: 2147483647

@@ -1,0 +1,68 @@
+First input your digits with spaces or tab
++ -> addition
+- -> subtraction
+* -> multiplication
+/ -> division
+S -> sine function
+P -> power function
+e -> Exponential function
+p -> print the top element of stack
+d -> create and push duplicate of top element
+s -> swapping of top two elements
+c -> clearing the stack
+D -> display the stack elements
+q -> quit
+3.14
+S
+Sine(3.14) = 0.0015926529
+3.14 2 /
+S
+Sine(1.57) = 0.99999968
+3.14 2 / 3.14 +
+S
+Sine(4.71) = -0.99999715
+3.14 3.14 / 2 -
+S
+Sine(-1) = -0.84147098
+3.14 2 * 3.14 -
+S
+Sine(3.14) = 0.0015926529
+2 8
+P
+2^8 = 256
+2 3 + 3
+P
+5^3 = 125
+0 0
+P
+Invalid input
+0.25 2
+P
+0.25^2 = 0.0625
+12 6 / 8 2 /
+P
+2^4 = 16
+12 4 / 3 3 *
+P
+3^9 = 19683
+18 9 / 20 15 -
+P
+2^5 = 32
+3.28
+P
+2^3.28 = 9.7135591
+1
+e
+exp(1) = 2.7182818
+1.28
+e
+exp(1.28) = 3.5966397
+3.5 2 * 3 +
+e
+exp(10) = 22026.466
+6 2 / 5 3 * +
+e
+exp(18) = 65659969
+12 2 / 3.5 +
+e
+exp(9.5) = 13359.727

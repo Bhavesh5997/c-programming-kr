@@ -1,0 +1,56 @@
+First input your digits with spaces or tab
++ -> addition
+- -> subtraction
+* -> multiplication
+/ -> division
+p -> print the top element of stack
+d -> create and push duplicate of top element
+s -> swapping of  top two elements
+c -> clearing the stack
+D -> display the stack elements
+q -> quit
+5 6 * 3 7 - +
+p
+Top element of stack: 26
+d
+D
+val[1] = 26
+val[0] = 26
+s
+D
+val[1] = 26
+val[0] = 26
+c
+error: stack empty
+D
+p
+4.5 -2 * -9 * -8 *
+p
+Top element of stack: -648
+-9 -2 * 6 / 7 + -50 +
+p
+Top element of stack: -40
+D
+val[1] = -40
+val[0] = -648
+s
+D
+val[1] = -648
+val[0] = -40
+-30 -50 - -2 * 2 / -5 *
+p
+Top element of stack: 100
+D
+val[2] = 100
+val[1] = -648
+val[0] = -40
+c
+D
+p
+-3 -50 - 2 * 6 + -2 *
+p
+Top element of stack: -200
+D
+val[0] = -200
+c
+D

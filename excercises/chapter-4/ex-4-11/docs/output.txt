@@ -1,0 +1,41 @@
+First input your digits with spaces or tab
++ -> addition
+- -> subtraction
+* -> multiplication
+/ -> division
+S -> sine function
+P -> power function
+e -> Exponential function
+p -> print the top element of stack
+d -> create and push duplicate of top element
+s -> swapping of top two elements
+c -> clearing the stack
+D -> display the stack elements
+q -> quit
+1.2 1.2 + 3.4 1.4 - *
+p
+Top element of stack: 4.8
+3 2 / 2 * 3 / 100 *
+p
+Top element of stack: 100
+3.14 2 /
+S
+Sine(1.57) = 0.99999968
+3.14 2 * 3.14 2 / +
+S
+Sine(7.85) = 0.99999207
+3.14 3.14 4 / +
+S
+Sine(3.925) = -0.70569766
+3.14 3 * 3.14 2 / +
+S
+Sine(10.99) = -0.99998446
+2.4 3
+P
+2.4^3 = 13.824
+4 3
+P
+4^3 = 64
+8 3
+P
+8^3 = 512
