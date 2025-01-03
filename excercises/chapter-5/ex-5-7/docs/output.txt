@@ -1,0 +1,80 @@
+Without alloc function program take 0.000040 seconds less time compare to with alloc function.
+
+1)
+Enter your input lines:
+pqrs
+yzx
+cab
+abc
+bcd
+def
+Runtime of readline with 2d array: 0.000049 Seconds
+
+Entered lines after soting:
+abc
+bcd
+cab
+def
+pqrs
+yzx
+
+2)
+Enter your input lines:
+st to nd
+bl to vv
+adi to st
+bl to adi
+brc to st
+nd to st
+Runtime of readline with 2d array: 0.000091 Seconds
+
+Entered lines after soting:
+adi to st
+bl to adi
+bl to vv
+brc to st
+nd to st
+st to nd
+
+3)
+Enter your input lines:
+hello world
+awesome
+bright
+draft
+caught
+edge
+detection
+Runtime of readline with 2d array: 0.000087 Seconds
+
+Entered lines after soting:
+awesome
+bright
+caught
+detection
+draft
+edge
+hello world
+
+4)
+Enter your input lines:
+erosion operation
+dilation operation
+arithmetic operator
+ternory operator
+bitwise operator
+comma operator
+Runtime of readline with 2d array: 0.000122 Seconds
+
+Entered lines after soting:
+arithmetic operator
+bitwise operator
+comma operator
+dilation operation
+erosion operation
+ternory operator
+
+5)
+Enter your input lines:(ctrl + d)
+Runtime of readline with 2d array: 0.000046 Seconds
+No lines are entered

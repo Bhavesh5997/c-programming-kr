@@ -1,0 +1,59 @@
+1)
+To find year day from the year, month and day:
+Enter your year: 2024
+Enter your month: 2
+Enter your month day: 15
+day of year: 46
+
+To find month and day from the year and day of year:
+Enter your year: 2020
+Enter your day of year: 43
+month = 2 day = 12
+
+2)
+To find year day from the year, month and day:
+Enter your year: 2000
+Enter your month: 3
+Enter your month day: 14
+day of year: 74
+
+To find month and day from the year and day of year:
+Enter your year: 1993
+Enter your day of year: 364
+month = 12 day = 30
+
+3)
+To find year day from the year, month and day:
+Enter your year: 2025
+Enter your month: 15
+Enter your month day: 3
+Invalid input
+
+To find month and day from the year and day of year:
+Enter your year: 1999
+Enter your day of year: 367
+Invalid input
+
+4)
+To find year day from the year, month and day:
+Enter your year: 2019
+Enter your month: 1
+Enter your month day: 35
+Invalid input
+
+To find month and day from the year and day of year:
+Enter your year: 2003
+Enter your day of year: 366
+Invalid input
+
+5)
+To find year day from the year, month and day:
+Enter your year: 0
+Enter your month: 0
+Enter your month day: 0
+Invalid input
+
+To find month and day from the year and day of year:
+Enter your year: 0
+Enter your day of year: 12
+Invalid input

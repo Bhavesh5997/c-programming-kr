@@ -1,0 +1,39 @@
+1)
+./ex-5-10/bin/ex-5-10 2 3 4 + \*
+Result: 14.00
+
+2)
+./ex-5-10/bin/ex-5-10 3 5 6 7 + - \*
+Result: -24.00
+
+3)
+./ex-5-10/bin/ex-5-10 3 0 4 3 \* + /
+Result: 0.25
+
+4)
+ ./ex-5-10/bin/ex-5-10 12 0 1 2 + + /
+Result: 4.00
+
+5)
+./ex-5-10/bin/ex-5-10 12 3 6 3 / \* /
+Result: 2.00
+
+6)
+ ./ex-5-10/bin/ex-5-10
+Provide command line as per below example
+example: ./<path>/binary_file 2 3 4 + *
+
+7)
+./ex-5-10/bin/ex-5-10 -
+Provide command line as per below example
+example: ./<path>/binary_file 2 3 4 + *
+
+8)
+./ex-5-10/bin/ex-5-10 1 2 3 4
+Provide command line as per below example
+example: ./<path>/binary_file 2 3 4 + *
+
+9)
+./ex-5-10/bin/ex-5-10 1 +
+Provide command line as per below example
+example: ./<path>/binary_file 2 3 4 + *

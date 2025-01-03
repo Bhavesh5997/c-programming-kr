@@ -1,0 +1,19 @@
+1)
+Enter your string1: hello
+Enter your string2:  world
+String1 after strcat function: hello world
+
+2)
+Enter your string1: ab cd ef
+Enter your string2: fg 123 45 6
+String1 after strcat function: ab cd effg 123 45 6
+
+3)
+Enter your string1: 	123	ab
+Enter your string2: 12	abcd
+String1 after strcat function: 	123	ab12	abcd
+
+4)
+Enter your string1: !@#$ 	112
+Enter your string2:     abcd
+String1 after strcat function: !@#$ 	112	abcd

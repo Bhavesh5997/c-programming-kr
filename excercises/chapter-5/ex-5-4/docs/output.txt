@@ -1,0 +1,41 @@
+1)
+Enter your string1:
+hello
+Enter your string2:
+world
+str2 is not occur at the end of str1
+
+2)
+Enter your string1:
+hello world
+Enter your string2:
+world
+str2 is occurs at the end of str1
+
+3)
+Enter your string1:
+hello world
+Enter your string2:
+hello
+str2 is not occur at the end of str1
+
+4)
+Enter your string1:
+world
+Enter your string2:
+world
+str2 is occurs at the end of str1
+
+5)
+Enter your string1:
+hello   world
+Enter your string2:
+	world
+str2 is occurs at the end of str1
+
+6)
+Enter your string1:
+ab cd ef g
+Enter your string2:
+ g
+str2 is occurs at the end of str1

@@ -1,0 +1,86 @@
+1)
+Enter your input lines:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+Output:
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+
+2)
+./bin/ex-5-13 -n 5
+Enter your input lines:
+hello world
+abcd
+pqrs
+xyz
+efg
+ijk
+lmn
+
+Output:
+pqrs
+xyz
+efg
+ijk
+lmn
+
+3)
+./bin/ex-5-13 -n 3
+Enter your input lines:
+hdbbdf
+wdwqeq
+ytrtr
+qmkw
+dfm
+
+Output:
+ytrtr
+qmkw
+dfm
+
+4)
+Enter your input lines:
+1
+2
+3
+4
+
+Output:
+1
+2
+3
+4
+
+5)
+./ex-5-13/bin/ex-5-13 -n
+Usage: ./<path>/binary_file -n <no. of lines>
+
+6)
+./ex-5-13/bin/ex-5-13 -n hello
+Usage: ./<path>/binary_file -n <no. of lines>
+
+7)
+./ex-5-13/bin/ex-5-13 -1
+Usage: ./<path>/binary_file -n <no. of lines>
