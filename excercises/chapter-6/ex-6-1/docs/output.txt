@@ -1,0 +1,98 @@
+1)
+Enter your words:
+/*auto*/
+//break
+while
+
+Keywords from entered words:
+   1 while
+
+2)
+Enter your words:
+_auto
+_while
+case
+const
+
+Keywords from entered words:
+   1 case
+   1 const
+
+3)
+Enter your words:
+while_
+#case
+break
+
+Keywords from entered words:
+   1 break
+
+4)
+Enter your words:
+// while
+/* case */
+char
+void
+
+Keywords from entered words:
+   1 char
+   1 void
+
+5)
+Enter your words:
+"while"
+"case"
+volatile
+continue
+
+Keywords from entered words:
+   1 continue
+   1 volatile
+
+6)
+Enter your words:
+<unsigned>
+default
+while
+
+Keywords from entered words:
+   1 default
+   1 while
+
+7)
+Enter your words:
+__while
+_auto_
+case
+//case
+while
+case
+#break
+
+Keywords from entered words:
+   2 case
+   1 while
+
+8)
+Enter your words:
+/*
+while
+*/
+// break
+void
+continue
+
+Keywords from entered words:
+   1 continue
+   1 void
+
+9)
+Enter your words:
+@while
+&break
+while (1)
+default
+
+Keywords from entered words:
+   1 default
+   1 while
