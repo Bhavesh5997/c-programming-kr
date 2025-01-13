@@ -10,6 +10,7 @@ all:
 	$(QUIET)$(MAKE) -C ./chapter-4
 	$(QUIET)$(MAKE) -C ./chapter-5
 	$(QUIET)$(MAKE) -C ./chapter-6
+	$(QUIET)$(MAKE) -C ./chapter-7
 clean:
 	$(QUIET)$(CLEAN) -C ./chapter-1
 	$(QUIET)$(CLEAN) -C ./chapter-2
@@ -17,3 +18,4 @@ clean:
 	$(QUIET)$(CLEAN) -C ./chapter-4
 	$(QUIET)$(CLEAN) -C ./chapter-5
 	$(QUIET)$(CLEAN) -C ./chapter-6
+	$(QUIET)$(CLEAN) -C ./chapter-7

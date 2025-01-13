@@ -1,0 +1,15 @@
+1)
+char ch = 'a';
+char str[] = "hello world";
+float fnum = 7.2;
+int inum = 15;
+
+using minprintf outputs:
+character type value = a
+string = hello world
+float number = 7.200000
+integer number = 15
+integer number with fieldwidth 5 =    15
+integer number in hex form with %x format specifier = f
+integer number in hex form %X specifier = F
+integer number in octal form = 17
