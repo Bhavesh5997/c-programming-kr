@@ -1,0 +1,11 @@
+
+description: HELLO DRIVER
+
+compatible: "hello,driver"
+properties:
+  label:
+    type: string
+    required: true
+  an_inte:
+    type: int
+    required: true
