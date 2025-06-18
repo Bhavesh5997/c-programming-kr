@@ -1,0 +1,85 @@
+CHAPTER 9
+VERSION CONTROL SYSTEMS
+9.1 Overview
+Version control, also known as source control, is the practice of tracking and managing changes
+to software code. Version control systems are software tools that help software teams manage
+changes to source code over time.
+Basically Version control system keeps track on changes made on a particular software and take a
+snapshot of every modification. Let us suppose if a team of developer add some new functionalities
+in an application and the updated version is not working properly so as the version control system
+keeps track of our work so with the help of version control system, we can omit the new changes
+and continue with the previous version. Many version control systems are available in market
+like Mercurial, Bitbucket, Helix Core, GIT etc.
+9.2 Git
+Git is a distributed version control system (DVCS) that helps manage and track changes to source
+code during software development. Git is open source, meaning its source code is freely available
+and can be modified. Git tracks changes made to files over time. It allows developers to see a
+detailed history of changes, revert to previous versions, and collaborate on code with others. Each
+developer working on a project has their own copy of the entire repository, including its history.
+This allows for decentralized and concurrent work, even without an internet connection.
+9.3 Basic terminology
+Repository: The database or storage where all the files and their history are stored.
+Commit: A snapshot of changes made to files at a specific point in time. Each commit is associated
+with a unique identifier.
+Branch: A separate line of development. Branches allow developers to work on features or fixes
+independently without affecting the main codebase until they're ready to merge their changes.
+Merge: The process of integrating changes from one branch into another.
+Conflict: Occurs when two or more changes cannot be automatically merged, and manual
+intervention is required to resolve the differences.
+48Pull Request (PR): In DVCS systems like Git, a pull request is a request to merge changes from one
+branch into another. It provides a way for team members to review and discuss changes before they
+are merged.
+9.4 Basic Commands
+git status
+‘git status’ tells what's happening in Git repository. It shows which files have been modified, which
+ones are staged for a commit, and which ones are untracked (new files not yet added to Git).
+git add
+‘git add’ is like putting items in a box to be shipped. It stages changes or new files, preparing them
+to be included in the next commit (snapshot) of project. Eg., ‘git add filename’ stages changes in
+‘filename’ for the next commit.
+git log
+‘git log’ is a record of all the commits made in the repository. It displays a list of commits along
+with their unique identifiers, authors, dates, and commit messages. It helps to see the history of
+changes and who made them.
+git commit
+‘git commit’ is like taking a snapshot of project at a certain point in time. It saves the staged changes
+as a new version with a unique identifier and a message describing the changes made in that commit.
+git push
+‘git push’ is like sharing changes with others or storing them in a central location (like a cloud
+server, e.g., GitHub). After committing changes, ‘git push’ uploads these commits from our local
+repository to a remote repository, making them available to others and creating backups.
+git branch
+‘git branch’ is like creating a separate path for our work. It allows to create, list, rename, and delete
+branches within our Git repository. A branch is like a parallel universe where we can work on a
+feature or fix without affecting the main project until we decide to merge it in.
+git checkout
+‘git checkout’ is like moving to a different place in our Git universe. It's used to switch between
+branches, manipulate files, create new branches, and even travel through our project's history.
+499.5 Rebasing
+Rebasing is the process of moving or combining a sequence of commits to a new base commit.
+Internally, Git accomplishes this by creating new commits and applying them to the specified base.
+Even though the branch looks the same, it's composed of entirely new commits.
+The primary reason for rebasing is to maintain a linear project history.
+Figure 22 git rebase flow
+We can perform rebasing by the following command;
+git pull --rebase
+This command is a combination of two separate Git commands: ‘git pull’ and ‘git rebase’.
+• ‘git pull’: This command fetches changes from a remote repository and merges them into the
+current branch.
+• ‘git rebase’: This means that our local commits will be replayed on top of the updated remote
+branch, giving ua a cleaner linear history.
+If conflicts arise during the rebase (i.e., if changes in our local commits conflict with changes from
+the remote branch), Git pauses the rebase process. We will need to resolve these conflicts by
+editing the affected files. We can abort the rebase at any time using ‘git rebase --abort’.
+After resolving conflicts: Use ‘git add <file>’ to stage the resolved changes, continue the rebase
+process using ‘git rebase –continue’.
+509.6 Modifying remote commits
+The ‘git format-patch -1’ command creates a patch file for the most recent commit in our
+repository. The ‘-1’ flag indicates that we want to create a patch for just the last commit. This
+command generates a patch file that contains all the changes introduced in that commit, including
+the commit message.
+This patch file can be shared with others or applied to another repository using the ‘git apply’ or
+‘git am’ commands, allowing them to replicate the changes made in that specific commit. If we
+want to generate patches for multiple commits or a specific range of commits, we can adjust the
+number accordingly (e.g., ‘-2’ for the last two commits).
+Then this needs to be pushed forcefully by using ‘git push origin <branch_name> -f’.

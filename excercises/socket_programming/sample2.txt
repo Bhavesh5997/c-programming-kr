@@ -1,0 +1,46 @@
+RTOS Fundamentals
+A real-time operating system (RTOS) is a specialized OS designed to handle tasks that must
+be completed within strict time constraints. Unlike general-purpose operating systems
+(GPOS), which prioritize multitasking and user interaction, an RTOS ensures predictable
+and timely execution of tasks, making it ideal for time-sensitive applications.
+RTOS is commonly used in environments where numerous external events must be
+processed quickly and within defined deadlines. Examples include industrial automation,
+flight control, telecommunications, real-time simulations, and medical devices.
+
+RTOS is classified into 3 types:
+
+1. Hard Real-Time Operating System:
+A hard real-time operating system is used when we need to complete tasks by a given
+deadline. If the task is not completed on time then the system is considered to be failed.
+For example, the pacemaker. A pacemaker has flexible, insulated wires (leads) that are
+placed in one or more chambers of the heart. These wires deliver electrical pulses to adjust
+the heart rate. And these wires require a hard real-time operating system.
+
+2. Soft Real-Time Operating System
+A soft real-time operating system is used where few delays in time duration are acceptable.
+That is if the given task is taking a few seconds more than the specified time then also no
+critical damage takes place.
+For example, telephone switches, the sending or receiving of the call can take some time.
+It will not be considered a failure.
+
+3. Firm Real-Time Operating System
+A firm real-time operating system lies between the hard and soft real-time operating system.
+A firm real-time system is one in which a few missed deadlines will not lead to total failure,
+but missing more than a few may lead to complete or catastrophic system failure.
+However, unlike a hard real-time task, even if a firm real-time task is not completed within
+its deadline, the system doesn’t fail but the late results are merely discarded.
+For example, in Video Conferencing, when a certain frame is being played, if some
+preceding frame arrives at the receiver, then this frame is of no use and is discarded.
+
+Key Features of Zephyr RTOS
+Zephyr is a small yet powerful real-time operating system (RTOS) designed for resource
+constrained embedded devices such as smart gadgets, sensors, and wearables. As an open-
+source RTOS, it allows developers to use, modify, and improve it freely, fostering
+innovation and collaboration.
+One of Zephyr's key strengths is its efficiency on low-power devices, making it suitable for
+applications requiring minimal energy consumption and high reliability. It supports a wide
+range of processor architectures, including ARM, RISC-V, and x86, providing flexibility
+across different hardware platforms.
+18Zephyr’s modular architecture enables developers to select only the necessary features,
+keeping the system lightweight and fast. This design makes Zephyr ideal for embedded
+applications where realtime performance, security, and scalability are crucial.
