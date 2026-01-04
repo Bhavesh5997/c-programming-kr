@@ -2,11 +2,12 @@ C Programming Practice (K&R):
 
 All programs are written and tested on Linux.
 
+```bash
 Directory Structure (High Level):
 excercises/
 ├── chapter-1 to chapter-7   # K&R chapter-wise exercises
 ├── assignment               # App + Library based assignment
-└── socket_programming       # Simple TCP client-server programs
+```
 
 Build System Overview:
 - Each exercise has its own Makefile
@@ -46,11 +47,13 @@ $ make -C ex-1-1/build
 $ ./ex-1-1/bin/ex-1-1
 $ make -C ex-1-1/build clean
 
+```bash
 Assignment Directory:
 assignment/
 ├── lib   # Reusable library code
 ├── app   # Application using the library
 └── Makefile
+```
 
 Build assignment (recommended way):
 $ cd excercises/assignment
@@ -78,12 +81,3 @@ Clean build:
 $ make -C build clean
 $ cd ../lib
 $ make -C build clean
-
-Socket Programming:
-$ gcc server.c -o server
-$ gcc client.c -o client
-$ ./server 9898
-$ ./client 127.0.0.1 9898
-
-- Use 127.0.0.1 if server and client run on the same PC
-- Use server’s IP address if running on different machines
