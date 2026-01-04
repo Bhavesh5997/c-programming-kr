@@ -3,10 +3,231 @@ C Programming Practice (K&R):
 All programs are written and tested on Linux.
 
 Directory Structure (High Level):
-excercises/
-├── chapter-1 to chapter-7   # K&R chapter-wise exercises
-├── assignment               # App + Library based assignment
-└── socket_programming       # Simple TCP client-server programs
+excercises
+   ├── assignment
+   │   ├── app
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   └── src
+   │   │       └── app.c
+   │   ├── lib
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── Doxyfile
+   │   │   ├── include
+   │   │   │   └── doubly_linked_list.h
+   │   │   └── src
+   │   │       └── doubly_linked_list.c
+   │   └── Makefile
+   ├── chapter-1
+   │   ├── ex-1-1
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   └── src
+   │   │       └── ex-1-1.c
+   │   ├── ex-1-11
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   └── src
+   │   │       └── ex-1-11.c
+   │   ├── ex-1-6
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   └── src
+   │   │       └── ex-1-6.c
+   │   └── Makefile
+   ├── chapter-2
+   │   ├── ex-2-4
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── squeeze.h
+   │   │   └── src
+   │   │       ├── ex-2-4.c
+   │   │       └── squeeze.c
+   │   ├── ex-2-5
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── any.h
+   │   │   └── src
+   │   │       ├── any.c
+   │   │       └── ex-2-5.c
+   │   ├── ex-2-6
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── setbits.h
+   │   │   └── src
+   │   │       ├── ex-2-6.c
+   │   │       └── setbits.c
+   │   └── Makefile
+   ├── chapter-3
+   │   ├── ex-3-1
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── binsearch.h
+   │   │   └── src
+   │   │       ├── binsearch.c
+   │   │       └── ex-3-1.c
+   │   ├── ex-3-2
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── escape.h
+   │   │   └── src
+   │   │       ├── escape.c
+   │   │       └── ex-3-2.c
+   │   ├── ex-3-3
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── expand.h
+   │   │   └── src
+   │   │       ├── ex-3-3.c
+   │   │       └── expand.c
+   │   ├── ex-3-4
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── itoa.h
+   │   │   └── src
+   │   │       ├── ex-3-4.c
+   │   │       └── itoa.c
+   │   ├── ex-3-5
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── itob.h
+   │   │   └── src
+   │   │       ├── ex-3-5.c
+   │   │       └── itob.c
+   │   ├── ex-3-6
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── include
+   │   │   │   └── itoa.h
+   │   │   └── src
+   │   │       ├── ex-3-6.c
+   │   │       └── itoa.c
+   │   └── Makefile
+   ├── chapter-4
+   │   ├── ex-4-11
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-4-11.c
+   │   ├── ex-4-12
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-4-12.c
+   │   ├── ex-4-4
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-4-4.c
+   │   ├── ex-4-5
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-4-5.c
+   │   └── Makefile
+   ├── chapter-5
+   │   ├── ex-5-1
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-1.c
+   │   ├── ex-5-10
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-10.c
+   │   ├── ex-5-13
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-13.c
+   │   ├── ex-5-3
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-3.c
+   │   ├── ex-5-4
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-4.c
+   │   ├── ex-5-7
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-7.c
+   │   ├── ex-5-8
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-5-8.c
+   │   └── Makefile
+   ├── chapter-6
+   │   ├── ex-6-1
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-6-1.c
+   │   └── Makefile
+   ├── chapter-7
+   │   ├── ex-7-3
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-7-3.c
+   │   ├── ex-7-5
+   │   │   ├── build
+   │   │   │   └── Makefile
+   │   │   ├── docs
+   │   │   │   └── output.txt
+   │   │   └── src
+   │   │       └── ex-7-5.c
+   │   └── Makefile
+   ├── Makefile
+   └── socket_programming
+       ├── client2.c
+       ├── client3.c
+       ├── client.c
+       ├── sample2.txt
+       ├── sample3.txt
+       ├── sample.txt
+       └── server.c
 
 Build System Overview:
 - Each exercise has its own Makefile
