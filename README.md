@@ -87,3 +87,5 @@ $ ./client 127.0.0.1 9898
 
 - Use 127.0.0.1 if server and client run on the same PC
 - Use server’s IP address if running on different machines
+- 9898 is the port number
+   - You can use any free port number
